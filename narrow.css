@@ -1,0 +1,5 @@
+@media (max-aspect-ratio: 2/3) {
+  body {
+    background: red;
+  }
+}

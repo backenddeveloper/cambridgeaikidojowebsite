@@ -1,0 +1,5 @@
+@media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 1/1) {
+  body {
+    background: cyan;
+  }
+}

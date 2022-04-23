@@ -1,0 +1,88 @@
+@media (min-aspect-ratio: 1/1) {
+
+    #header {
+        display: flex;
+        text-align: center;
+        font-family: 'Akaya Kanadaka';
+        font-size: 1.35rem;
+        text-decoration: none;
+        top: 3vh;
+        height: 4.5vh;
+        position: relative;
+    }
+    
+    #header > .link {
+        display: flex;
+        flex: 1;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border: 1px solid #dedede;
+        border-radius: 2px;
+        box-shadow: 4px 4px #ececec;
+    }
+    
+    .link > a {
+        text-decoration: none;
+        color: #252525;
+        height: 100%;
+        width: 100%;
+        flex-grow: 1;
+    }
+    
+    #main_nav {
+        position: absolute;
+        top: 10vh;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    #name {
+        font-family: 'Akaya Kanadaka';
+        font-size: 5.5vw;
+        font-style: italic;
+        position: absolute;
+        text-align: center;
+        text-shadow: 5px 5px 5px white;
+        top: 0px;
+        left: 24vw;
+        width: 50vw;
+        color: #252525;
+    }
+    
+    #background {
+        background-color: white;
+        opacity: 0.75;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+    
+    #background>img {
+        position: absolute;
+        left: 13%;
+        width: 70%;
+        top: 12vh;
+        height: 100%;
+        max-height: 50vw;
+    }
+
+}
+
+/* Square ratio */
+@media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 1/1) {
+  body {
+    background: cyan;
+  }
+}
+
+/* Phone ratio */
+@media (max-aspect-ratio: 2/3) {
+  body {
+    background: red;
+  }
+}
