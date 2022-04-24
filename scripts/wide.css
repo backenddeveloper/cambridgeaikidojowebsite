@@ -94,4 +94,74 @@
         display: none;
     }
 
+    #adults_header {
+        font-family: 'Akaya Kanadaka';
+        font-size: 6vw;
+        text-align: center;
+        position: relative;
+    }
+
+    #adults {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2vw;
+    }
+
+    #kids_header {
+        font-family: 'Akaya Kanadaka';
+        font-size: 6vw;
+        text-align: center;
+        position: relative;
+    }
+
+    #kids {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2vw;
+    }
+
+    #courses_header {
+        font-family: 'Akaya Kanadaka';
+        font-size: 6vw;
+        text-align: center;
+        position: relative;
+    }
+
+    .training_location {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: calc(33% - 6vw);
+        flex-grow: 1;
+    }
+
+    .kids_spacer {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: calc(33% - 6vw);
+        flex-grow: 1;
+    }
+
+    .training_time {
+        font-family: 'Akaya Kanadaka';
+        font-size: 3vw;
+        text-align: center;
+        position: relative;
+    }
+
+    .training_location_description {
+        font-family: 'Akaya Kanadaka';
+        font-size: 1.8vw;
+        text-align: center;
+        position: relative;
+    }
+
+    .map {
+        width: 100%;
+        max-width: 27vw;
+        position: relative;
+    }
 }

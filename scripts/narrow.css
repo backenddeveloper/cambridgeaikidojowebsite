@@ -177,10 +177,10 @@
 
     #kids {
         position: relative;
-        margin-top: 4vw;
     }
 
     #kids_header {
+        margin-top: 4vw;
         font-family: 'Akaya Kanadaka';
         font-size: 9vw;
         left: 10vw;
@@ -193,6 +193,7 @@
     }
 
     #courses_header {
+        margin-top: 4vw;
         font-family: 'Akaya Kanadaka';
         font-size: 9vw;
         left: 10vw;
