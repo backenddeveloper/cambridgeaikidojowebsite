@@ -90,4 +90,8 @@
         max-height: 50vw;
     }
 
+    .top_left_circle {
+        display: none;
+    }
+
 }

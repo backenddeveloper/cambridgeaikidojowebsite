@@ -11,13 +11,21 @@
             html, * {
                 padding: 0px;
                 margin: 0px;
-            //    border: 1px solid black;
+                scrollbar-width: none;
+            }
+            ::-webkit-scrollbar {
+                display: none;
             }
         </style>
         <link rel="stylesheet" href="scripts/wide.css" />
         <link rel="stylesheet" href="scripts/narrow.css" />
     </head>
     <body>
+        <div class='top_left_circle'>
+            <a href='/'>
+                <img src='images/logo.jpg' />
+            </a>
+        </div>
         <div id='header'>
             <input id="burger_checkbox" type="checkbox" />
             <div id='burger'>
@@ -26,19 +34,19 @@
                 <div class='bun' id='bottom_bun'></div>
             </div>
             <div class='link'>
-                <a href='#training'>Training</a>
+                <a href='#training' onclick='document.getElementById("burger_checkbox").checked = false'>Training</a>
             </div>
             <div class='link'>
-                <a href='#aikido'>What is Aikido?</a>
+                <a href='#aikido' onclick='document.getElementById("burger_checkbox").checked = false'>What is Aikido?</a>
             </div>
             <div class='link'>
-                <a href='#contact'>Contact</a>
+                <a href='#contact' onclick='document.getElementById("burger_checkbox").checked = false'>Contact</a>
             </div>
             <div class='link'>
-                <a href='#gallery'>Gallery</a>
+                <a href='#gallery' onclick='document.getElementById("burger_checkbox").checked = false'>Gallery</a>
             </div>
             <div class='link'>
-                <a href='#resources'>Resources</a>
+                <a href='#resources' onclick='document.getElementById("burger_checkbox").checked = false'>Resources</a>
             </div>
         </div>
         <div id='main_nav'>
@@ -46,11 +54,20 @@
             <div id='background'>
                 <img src='images/logo.jpg' />
             </div>
+            <style>
+                .top_left_circle {
+                    display: none;
+                }
+            </style>
         </div>
         <script>
-            preload_pages()
             register_route_handler()
             display_page_from_window_hash()
         </script>
+        <link rel="preload" as="fetch" href="pages/training.html">
+        <link rel="preload" as="fetch" href="pages/aikido.html">
+        <link rel="preload" as="fetch" href="pages/contact.html">
+        <link rel="preload" as="fetch" href="pages/gallery.html">
+        <link rel="preload" as="fetch" href="pages/resources.html">
     </body>
 </html>

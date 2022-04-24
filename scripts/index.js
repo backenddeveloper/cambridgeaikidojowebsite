@@ -2,21 +2,6 @@
 
 var page_list = ['training', 'aikido', 'contact', 'gallery', 'resources'];
 
-var page_html_content = {};
-
-var preload_pages = () => {
-
-
-    for (let page of page_list)
-    {
-        fetch(`pages/${page}.html`)
-        .then(response => response.text())
-        .then(html => {
-            page_html_content[page] = html;
-        })
-    }
-};
-
 var register_route_handler = () => {
 
     window.onhashchange = (event) => {
@@ -28,12 +13,23 @@ var register_route_handler = () => {
 var display_page_from_window_hash = () => {
 
     var hash = window.location.hash.substring(1);
+    var element = document.getElementById('main_nav');
 
-    if (!(hash in page_html_content))
+    if(hash === '')
     {
+        return 'Root URL'
+    }
+
+    /* This whitelisting is vitally important for websec */
+    if (!page_list.includes(hash))
+    {
+        console.log(hash)
         throw "Got a route we can't direct to";
     }
-    
-    var element = document.getElementById('main_nav');
-    element.innerHTML = page_html_content[hash]
+
+    fetch(`pages/${hash}.html`)
+    .then(response => response.text())
+    .then(html => {
+        element.innerHTML = html;
+    })
 };
