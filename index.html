@@ -2,43 +2,55 @@
 <html>
     <head>
         <title>Cambridge Aiki Dojo</title>
+        <script type='text/javascript' src='scripts/index.js'></script>
         <style type='text/css'>
             @font-face {
                 font-family: 'Akaya Kanadaka';
-                src: url('akayakanadaka.woff2') format('woff2');
+                src: url('fonts/akayakanadaka.woff2') format('woff2');
             }
             html, * {
                 padding: 0px;
                 margin: 0px;
+            //    border: 1px solid black;
             }
         </style>
-        <link rel="stylesheet" href="wide.css" />
-        <link rel="stylesheet" href="square.css" />
-        <link rel="stylesheet" href="narrow.css" />
+        <link rel="stylesheet" href="scripts/wide.css" />
+        <link rel="stylesheet" href="scripts/narrow.css" />
     </head>
     <body>
         <div id='header'>
-            <div class='link'>
-                <a href='#training.html'>Training</a>
+            <input id="burger_checkbox" type="checkbox" />
+            <div id='burger'>
+                <div class='bun' id='top_bun'></div>
+                <div class='bun' id='middle_bun'></div>
+                <div class='bun' id='bottom_bun'></div>
             </div>
             <div class='link'>
-                <a href='#aikido.html'>What is Aikido?</a>
+                <a href='#training'>Training</a>
             </div>
             <div class='link'>
-                <a href='#contact.html'>Contact</a>
+                <a href='#aikido'>What is Aikido?</a>
             </div>
             <div class='link'>
-                <a href='#gallery.html'>Gallery</a>
+                <a href='#contact'>Contact</a>
             </div>
             <div class='link'>
-                <a href='#resources.html'>Resources</a>
+                <a href='#gallery'>Gallery</a>
+            </div>
+            <div class='link'>
+                <a href='#resources'>Resources</a>
             </div>
         </div>
         <div id='main_nav'>
             <h1 id='name'>Cambridge Aiki Dojo</h1>
+            <div id='background'>
+                <img src='images/logo.jpg' />
+            </div>
         </div>
-        <div id='background'>
-            <img src='logo.jpg' />
-        </div>
+        <script>
+            preload_pages()
+            register_route_handler()
+            display_page_from_window_hash()
+        </script>
     </body>
 </html>

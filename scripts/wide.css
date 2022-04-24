@@ -1,14 +1,23 @@
-@media (min-aspect-ratio: 1/1) {
+@media (min-aspect-ratio: 2/3) {
+
+    #burger {
+        display: none;
+    }
+
+    #burger_checkbox {
+        display: none;
+    }
 
     #header {
         display: flex;
         text-align: center;
         font-family: 'Akaya Kanadaka';
-        font-size: 1.35rem;
+        font-size: 1.8vw;
         text-decoration: none;
         top: 3vh;
-        height: 4.5vh;
+        height: 2.7vw;
         position: relative;
+        user-select: none;
     }
     
     #header > .link {
@@ -29,6 +38,15 @@
         flex-grow: 1;
     }
     
+    .link:hover {
+        background: #f3f3f3;
+    }
+
+    .link:active {
+        background: #c5c5c5;
+        box-shadow: 2px 2px #dedede !important;
+    }
+
     #main_nav {
         position: absolute;
         top: 10vh;
@@ -48,6 +66,7 @@
         left: 24vw;
         width: 50vw;
         color: #252525;
+        user-select: none;
     }
     
     #background {
@@ -55,7 +74,7 @@
         opacity: 0.75;
         position: absolute;
         z-index: -1;
-        top: 0px;
+        top: -10vh;
         right: 0px;
         bottom: 0px;
         left: 0px;
@@ -71,18 +90,4 @@
         max-height: 50vw;
     }
 
-}
-
-/* Square ratio */
-@media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 1/1) {
-  body {
-    background: cyan;
-  }
-}
-
-/* Phone ratio */
-@media (max-aspect-ratio: 2/3) {
-  body {
-    background: red;
-  }
 }

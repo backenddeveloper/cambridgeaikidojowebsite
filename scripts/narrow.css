@@ -1,0 +1,164 @@
+@media (max-aspect-ratio: 2/3) {
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        font-family: 'Akaya Kanadaka';
+        font-size: 1.8vw;
+        text-decoration: none;
+        top: 10vh;
+        position: relative;
+        user-select: none;
+    }
+
+    .link {
+        transition: 300ms;
+        height: 0px;
+        font-size: 0px;
+        z-index: 3;
+        position: relative;
+        width: 70vw;
+        left: 8vw;
+        background: white;
+    }
+
+    .link > a {
+        position: absolute;
+        flex-grow: 1;
+        width: 100%;
+        height: calc(100% - 4vw);
+        padding-top: 4vw;
+        left: 0px;
+        text-decoration: none;
+        color: #252525;
+    }
+
+    .link:active {
+        background: #c5c5c5;
+        box-shadow: 2px 2px #dedede !important;
+    }
+
+    .link:hover {
+        background: #f3f3f3;
+    }
+
+    #burger {
+        height: 9vw;
+        width: 9vw;
+        padding: 3vw;
+        position: absolute;
+        border: 1px solid #dedede;
+        border-radius: 2px;
+        box-shadow: 1vw 1vw #ececec;
+        right: 5vw;
+        z-index: 1;
+    }
+
+    #burger:hover {
+        background: #f3f3f3;
+    }
+
+    #burger_checkbox:active ~ #burger {
+        background: #c5c5c5;
+        box-shadow: 2px 2px #dedede !important;
+    }
+    
+    .bun {
+        height: 1.8vw;
+        width: 9vw;
+        border-radius: 0.8vw;
+        content: '';
+        background: #3c3c3c;
+        margin-top: 0.9vw;
+        transition: transform 400ms;
+    }
+    
+    #burger_checkbox {
+        height: 15vw;
+        width: 15vw;
+        position: absolute;
+        border: 1px solid #dedede;
+        border-radius: 2px;
+        box-shadow: 1vw 1vw #ececec;
+        right: 5vw;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    #burger_checkbox:checked ~ #burger>#top_bun {
+        margin: 0px;
+        position: absolute;
+        top: 6.5vw;
+        transform: rotate(45deg);
+    }
+
+    #burger_checkbox:checked ~ #burger>#middle_bun {
+        display: none;
+    }
+
+    #burger_checkbox:checked ~ #burger>#bottom_bun {
+        margin: 0px;
+        position: absolute;
+        top: 6.5vw;
+        transform: rotate(-45deg);
+    }
+
+    #burger_checkbox:checked ~ .link {
+        height: 20vw;
+        flex-grow: 1;
+        font-size: 10vw;
+        border: 1px solid #dedede;
+        border-radius: 2px;
+        box-shadow: 1vw 1vw #ececec;
+        margin-bottom: 0.5vw;
+    }
+
+    .link:has(~#burger > #burger_checkbox:checked) {
+        height: 10vw;
+    }
+
+    #name {
+        font-family: 'Akaya Kanadaka';
+        font-size: 7vw;
+        font-style: italic;
+        position: absolute;
+        text-align: center;
+        text-shadow: 5px 5px 5px white;
+        top: 0px;
+        left: 18vw;
+        width: 60vw;
+        color: #252525;
+        user-select: none;
+    }
+
+    #background {
+        background-color: white;
+        opacity: 0.75;
+        position: absolute;
+        z-index: -1;
+        top: -20vh;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    #background>img {
+        position: absolute;
+        left: -7vw;
+        width: 110vw;
+        top: calc(50% - 55vw);
+        height: 100%;
+        max-height: 80vw;
+    }
+
+    #main_nav {
+        position: absolute;
+        top: calc(50% - 60vw);
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+}
