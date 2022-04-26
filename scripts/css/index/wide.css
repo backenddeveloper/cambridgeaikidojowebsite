@@ -1,0 +1,99 @@
+@media (min-aspect-ratio: 2/3) {
+
+    #burger {
+        display: none;
+    }
+
+    #burger_checkbox {
+        display: none;
+    }
+
+    #top_nav {
+        display: flex;
+        text-align: center;
+        font-family: 'Akaya Kanadaka';
+        font-size: 1.8vw;
+        text-decoration: none;
+        top: 3vh;
+        height: 2.7vw;
+        position: relative;
+        user-select: none;
+    }
+    
+    #top_nav > .link {
+        display: flex;
+        flex: 1;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .link > a {
+        text-decoration: none;
+        color: #252525;
+        height: 100%;
+        width: 100%;
+        flex-grow: 1;
+        border: 1px solid #dedede;
+        border-radius: 2px;
+        box-shadow: 4px 4px #ececec;
+    }
+    
+    .link:hover {
+        background: #f3f3f3;
+    }
+
+    .link:active {
+        background: #c5c5c5;
+        box-shadow: 2px 2px #dedede !important;
+    }
+
+    #main_nav {
+        position: absolute;
+        top: 10vh;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    #home_name {
+        font-size: 5.5vw;
+        font-style: italic;
+        position: absolute;
+        text-align: center;
+        text-shadow: 5px 5px 5px white;
+        top: 0px;
+        left: 24vw;
+        width: 50vw;
+        color: #252525;
+        user-select: none;
+    }
+
+    #background {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        height: 110vh;
+        width: 110vw;
+        z-index: -1;
+        background-color: white;
+        opacity: 0.75;
+        overflow: hidden;
+    }
+
+    #background>img{
+        position: absolute;
+        left: 13%;
+        width: 70%;
+        top: 12vh;
+        height: 100%;
+        max-height: 50vw;
+    }
+
+    .text {
+        font-family: 'Akaya Kanadaka';
+        text-align: center;
+        position: relative;
+    }
+}

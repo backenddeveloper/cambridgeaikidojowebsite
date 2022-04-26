@@ -1,0 +1,58 @@
+@media (min-aspect-ratio: 2/3) {
+
+    .training_header {
+        font-size: 6vw;
+        margin-top: 2vw;
+    }
+
+    #adults {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2vw;
+    }
+
+    #kids {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 1vw;
+    }
+
+    .training_location {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: calc(33% - 6vw);
+        flex-grow: 1;
+    }
+
+    .kids_spacer {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: calc(33% - 6vw);
+        flex-grow: 1;
+    }
+
+    .training_time {
+        font-family: 'Akaya Kanadaka';
+        font-size: 3vw;
+        text-align: center;
+        position: relative;
+    }
+
+    .training_location_description {
+        font-size: 1.8vw;
+    }
+
+    .training_location_description_last {
+        margin-bottom: 1vw;
+    }
+
+    .map {
+        width: 100%;
+        max-width: 27vw;
+        position: relative;
+    }
+}

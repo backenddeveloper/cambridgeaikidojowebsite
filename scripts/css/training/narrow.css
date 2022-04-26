@@ -1,0 +1,92 @@
+@media (max-aspect-ratio: 2/3) {
+
+    .training_header {
+        font-size: 9vw;
+        position: relative;
+        margin-top: 4vw;
+    }
+
+    .training_location {
+        left: 10vw;
+        width: 80vw;
+        position: relative;
+    }
+
+    .training_time {
+        font-size: 7vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 6vw;
+        position: relative;
+    }
+
+    .training_location_description {
+        font-size: 4.5vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-bottom: 3vw;
+        position: relative;
+    }
+
+    .map {
+        height: 100%;
+        width: 100%;
+    }
+
+    .top_left_circle {
+        position: absolute;
+        width: 55vw;
+        height: 35vw;
+    }
+
+    .top_left_circle > a{
+        position: relative;
+        flex-grow: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+    .top_left_circle > a > img{
+        opacity: 75%;
+        flex-grow: 1;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    #contact_body {
+        margin-top: 2vw;
+    }
+
+    .contact_text {
+        font-size: 6vw;
+        width: 80vw;
+        left: 10vw;
+        position: relative;
+    }
+
+    .contact_details {
+        font-size: 3.5vw;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #contact_picture {
+        position: relative;
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    #contact_picture > img {
+        position: relative;
+        height: 100%;
+        width: 60vw;
+        left: 20vw;
+    }
+
+    #contact_picture_label {
+        text-align: center;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-var page_list = ['training', 'aikido', 'contact', 'gallery', 'resources'];
+var page_list = ['home', 'training', 'aikido', 'contact', 'gallery', 'resources'];
 
 var register_route_handler = () => {
 
@@ -32,4 +32,9 @@ var display_page_from_window_hash = () => {
     .then(html => {
         element.innerHTML = html;
     })
+};
+
+var close_burger = () => {
+
+    document.getElementById("burger_checkbox").checked = false;
 };

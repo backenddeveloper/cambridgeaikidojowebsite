@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+
         <title>Cambridge Aiki Dojo</title>
-        <script type='text/javascript' src='scripts/index.js'></script>
-        <style type='text/css'>
+        <script type='text/javascript' src='scripts/js/index.js'></script>
+        <link rel="stylesheet" href="scripts/css/index/wide.css" />
+        <link rel="stylesheet" href="scripts/css/index/narrow.css" />
+
+        <style>
             @font-face {
                 font-family: 'Akaya Kanadaka';
                 src: url('fonts/akayakanadaka.woff2') format('woff2');
@@ -17,16 +22,12 @@
                 display: none;
             }
         </style>
-        <link rel="stylesheet" href="scripts/wide.css" />
-        <link rel="stylesheet" href="scripts/narrow.css" />
+
     </head>
+
     <body>
-        <div class='top_left_circle'>
-            <a href='/'>
-                <img src='images/logo.jpg' />
-            </a>
-        </div>
-        <div id='header'>
+
+        <div id='top_nav'>
             <input id="burger_checkbox" type="checkbox" />
             <div id='burger'>
                 <div class='bun' id='top_bun'></div>
@@ -34,40 +35,47 @@
                 <div class='bun' id='bottom_bun'></div>
             </div>
             <div class='link'>
-                <a href='#training' onclick='document.getElementById("burger_checkbox").checked = false'>Training</a>
+                <a href='#training' onclick='close_burger()'>Training</a>
             </div>
             <div class='link'>
-                <a href='#aikido' onclick='document.getElementById("burger_checkbox").checked = false'>What is Aikido?</a>
+                <a href='#aikido' onclick='close_burger()'>What is Aikido?</a>
             </div>
             <div class='link'>
-                <a href='#contact' onclick='document.getElementById("burger_checkbox").checked = false'>Contact</a>
+                <a href='#contact' onclick='close_burger()'>Contact</a>
             </div>
             <div class='link'>
-                <a href='#gallery' onclick='document.getElementById("burger_checkbox").checked = false'>Gallery</a>
+                <a href='#gallery' onclick='close_burger()'>Gallery</a>
             </div>
             <div class='link'>
-                <a href='#resources' onclick='document.getElementById("burger_checkbox").checked = false'>Resources</a>
+                <a href='#resources' onclick='close_burger()'>Resources</a>
             </div>
         </div>
+
+        <div id='background'>
+            <img src='images/logo.jpg' />
+        </div>
+
         <div id='main_nav'>
-            <h1 id='name'>Cambridge Aiki Dojo</h1>
-            <div id='background'>
-                <img src='images/logo.jpg' />
-            </div>
-            <style>
-                .top_left_circle {
-                    display: none;
-                }
-            </style>
+            <h1 id='home_name' class='text'>Cambridge Aiki Dojo</h1>
         </div>
+
         <script>
             register_route_handler()
             display_page_from_window_hash()
         </script>
+
+        <link rel="preload" as="fetch" href="pages/home.html">
         <link rel="preload" as="fetch" href="pages/training.html">
         <link rel="preload" as="fetch" href="pages/aikido.html">
         <link rel="preload" as="fetch" href="pages/contact.html">
         <link rel="preload" as="fetch" href="pages/gallery.html">
         <link rel="preload" as="fetch" href="pages/resources.html">
+
     </body>
+
+    <footer>
+        <link rel="stylesheet" href="scripts/css/training/wide.css" />
+        <link rel="stylesheet" href="scripts/css/training/narrow.css" />
+    </footer>
+
 </html>
