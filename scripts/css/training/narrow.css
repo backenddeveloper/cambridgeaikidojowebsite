@@ -28,65 +28,90 @@
         position: relative;
     }
 
+    .map_holder {
+        background: url('../../../images/map_thumb.png') center no-repeat;
+        background-size: cover;
+    }
+
     .map {
         height: 100%;
         width: 100%;
     }
 
-    .top_left_circle {
-        position: absolute;
-        width: 55vw;
-        height: 35vw;
-    }
-
-    .top_left_circle > a{
-        position: relative;
-        flex-grow: 1;
-        height: 100%;
-        width: 100%;
-    }
-
-    .top_left_circle > a > img{
-        opacity: 75%;
-        flex-grow: 1;
-        height: 100%;
-        width: 100%;
+    .training_cost_header {
+        font-size: 7vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 6vw;
+        margin-bottom: 3vw;
         position: relative;
     }
 
-    #contact_body {
-        margin-top: 2vw;
+    .training_costs_text {
+        font-size: 5vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
 
-    .contact_text {
-        font-size: 6vw;
+    #training_fee_table {
+        margin-top: 3vw;
+        margin-bottom: 2vw;
         width: 80vw;
         left: 10vw;
         position: relative;
+        font-size: 4vw;
     }
 
-    .contact_details {
-        font-size: 3.5vw;
+    #training_empty_cell {
+        border: 1px solid #d6d6d6 !important;
+    }
+
+    #training_fee_table>tbody>tr>td {
         font-weight: bold;
-        font-style: italic;
+        border: 1px solid #585858;
     }
 
-    #contact_picture {
+    .training_parking_header {
+        font-size: 7vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 6vw;
+        margin-bottom: 1vw;
         position: relative;
-        width: 100%;
-        margin-top: 5vw;
     }
 
-    #contact_picture > img {
-        position: relative;
-        height: 100%;
-        width: 60vw;
-        left: 20vw;
-    }
-
-    #contact_picture_label {
-        text-align: center;
+    .training_parking_text {
         font-size: 5vw;
-        font-weight: bold;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .training_clothing_header {
+        font-size: 7vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 6vw;
+        margin-bottom: 1vw;
+        position: relative;
+    }
+
+    .training_clothing_text {
+        font-size: 5vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    #courses {
+        font-size: 5vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
 }

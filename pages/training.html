@@ -1,10 +1,17 @@
 <style>
-    #background > img {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 35vw;
-        width: 50vw;
+    @media (max-aspect-ratio: 2/3) {
+        #background > img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 35vw;
+            width: 50vw;
+        }
+    }
+    @media (min-aspect-ratio: 2/3) {
+        #background > img {
+            opacity: 0.08;
+        }
     }
 </style>
 
@@ -14,38 +21,91 @@
         <p class='training_time'>Tuesday 19:00-21:00</p>
         <p class='training_location_description'>Chesterton Sports Centre,</p>
         <p class='training_location_description training_location_description_last'>CB4 3NY</p>
-        <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.700531533785!2d0.12455865339928804!3d52.21885387419489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870ea1fcbb12d%3A0xe624eb2b6b1e0d7e!2sChesterton%20Sports%20Centre!5e0!3m2!1sen!2suk!4v1650761721930!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Chesterton Sports Centre Map</iframe>
+        <div class='map_holder'>
+            <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.700531533785!2d0.12455865339928804!3d52.21885387419489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870ea1fcbb12d%3A0xe624eb2b6b1e0d7e!2sChesterton%20Sports%20Centre!5e0!3m2!1sen!2suk!4v1650761721930!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Chesterton Sports Centre Map</iframe>
+        </div>
     </div>
     <div class='training_location'>
         <p class='training_time'>Thursday 20:30-22:00</p>
-        <p class='training_location_description'>Kelsey Kerridge,</p>
+        <p class='training_location_description'>Kelsey Kerridge Sports Centre,</p>
         <p class='training_location_description training_location_description_last'>CB1 1NA</p>
-        <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.326500133557!2d0.12605333253982523!3d52.20111391500161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8709a9a53b7ff%3A0x34e196dca006ac25!2sKelsey%20Kerridge%20Sports%20Centre!5e0!3m2!1sen!2suk!4v1650763204323!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Kelsey Kerridge Sports Centre Map</iframe>
+        <div class='map_holder'>
+            <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.326500133557!2d0.12605333253982523!3d52.20111391500161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8709a9a53b7ff%3A0x34e196dca006ac25!2sKelsey%20Kerridge%20Sports%20Centre!5e0!3m2!1sen!2suk!4v1650763204323!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Kelsey Kerridge Sports Centre Map</iframe>
+        </div>
     </div>
     <div class='training_location'>
         <p class='training_time'>Saturday 10:30-12:30</p>
         <p class='training_location_description'>University Sports Centre,</p>
         <p class='training_location_description training_location_description_last'>CB3 0AS</p>
-        <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4889.918796484!2d0.08926816035638577!3d52.207785325678984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8774861d9ffdf%3A0xb73d0c1fc075bba2!2sSports%20Centre%20and%20Gym%2C%20University%20of%20Cambridge!5e0!3m2!1sen!2suk!4v1650763463971!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">University Sports Centre Map</iframe>
+        <div class='map_holder'>
+            <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4889.918796484!2d0.08926816035638577!3d52.207785325678984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8774861d9ffdf%3A0xb73d0c1fc075bba2!2sSports%20Centre%20and%20Gym%2C%20University%20of%20Cambridge!5e0!3m2!1sen!2suk!4v1650763463971!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">University Sports Centre Map</iframe>
+        </div>
     </div>
 </div>
 
 <div id='kids_header' class='text training_header'>Training for Children</div>
 <div id='kids' class='text'>
-    <div class='kids_spacer'></div>
+    <div class='training_location empty'></div>
     <div class='training_location'>
         <p class='training_time'>Tuesday 19:00-20:00</p>
         <p class='training_location_description'>Chesterton Sports Centre,</p>
         <p class='training_location_description training_location_description_last'>CB4 3NY</p>
-        <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.700531533785!2d0.12455865339928804!3d52.21885387419489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870ea1fcbb12d%3A0xe624eb2b6b1e0d7e!2sChesterton%20Sports%20Centre!5e0!3m2!1sen!2suk!4v1650761721930!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Chesterton Sports Centre Map</iframe>
+        <div class='map_holder'>
+            <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.700531533785!2d0.12455865339928804!3d52.21885387419489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870ea1fcbb12d%3A0xe624eb2b6b1e0d7e!2sChesterton%20Sports%20Centre!5e0!3m2!1sen!2suk!4v1650761721930!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Chesterton Sports Centre Map</iframe>
+        </div>
     </div>
-    <div class='kids_spacer'></div>
+    <div class='training_location empty'></div>
 </div>
 
 <div id='training_info_header' class='text training_header'>Useful Information</div>
 <div id='training_info' class='text'>
+    <div class='training_cost_header'>Training Costs</div>
+    <p class='training_costs_text text'>Your first session is free!</p>
+    <p class='training_costs_text text'>After this there is an annual membership fee, that pays for insurance through the <a href='#resources'>Komyokan Aikido Association</a>, and a regular fee for training.</p>
+
+    <table id='training_fee_table'>
+        <tbody>
+            <tr>
+                <td id='training_empty_cell'></td>
+                <td>Adult waged</td>
+                <td>Unwaged / Student</td>
+            </tr>
+            <tr>
+                <td>KAA Annual Membership</td>
+                <td>£35</td>
+                <td>£20</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Training fee</p>
+                    <p>(if paid monthly)</p>
+                </td>
+                <td>£36</td>
+                <td>£24</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Training fee</p>
+                    <p>(if paid per-session)</p>
+                </td>
+                <td>£6</td>
+                <td>£4</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class='training_costs_text text'>Additionally, there is a £1.50 door fee for entry to the Kelsey Kerridge, charged by the sports centre.</p>
+
+    <div class='training_parking_header'>Parking</div>
+    <p class='training_parking_text text'>Free Parking is available at Chesterton Sports Centre</p>
+    <p class='training_parking_text text'>There is a paid parking facility connected to Kelsey Kerridge Sports Centre, some free parking is possible on nearby streets.</p>
+    <p class='training_parking_text text'>There is no parking available at the University Sports Centre, however it is generally possible to park on nearby streets.</p>
+
+    <div class='training_clothing_header'>What to wear</div>
+    <p class='training_clothing_text text'>If you have have Keikogi please feel free to wear it. Please note that Hakama are normally reserved for Yudansha. Otherwise please wear comfortable loose-fitting clothing that you don't mind rolling in, such as T-shirt and track-suit trousers. Please avoid zippers, buttons, belts, watches and jewellery.</p>
 </div>
+
 
 <div id='courses_header' class='text training_header'>Upcoming Courses</div>
 <div id='courses' class='text'>
+    <p>Information on upcoming courses can be found on our <a href='#resources'>resources page</a></p>
 </div>
