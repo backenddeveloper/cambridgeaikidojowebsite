@@ -9,7 +9,8 @@
     #contact_picture {
         width: 40vw;
         left: 55vw;
-        max-height: 40vw;
+        max-height: 60vh;
+        max-width: 60vh;
         position: absolute;
     }
 
