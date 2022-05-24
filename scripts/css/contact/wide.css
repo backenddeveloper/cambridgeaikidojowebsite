@@ -1,3 +1,68 @@
 @media (min-aspect-ratio: 2/3) {
 
+    #contact_header {
+        font-size: 4vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    #contact_picture {
+        width: 40vw;
+        left: 55vw;
+        max-height: 40vw;
+        position: absolute;
+    }
+
+    #contact_picture>img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #contact_picture_label {
+        position: absolute;
+        font-size: 3.5vw;
+        width: 40vw;
+        left: 10vw;
+        top: 14vw;
+        text-align: center;
+    }
+
+    #contact_table {
+        position: absolute;
+        font-size: 2vw;
+        top: 22vw;
+        width: 40vw;
+        left: 10vw;
+        text-align: center;
+    }
+
+    .contact_method {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .contact_label {
+        text-align: left;
+        width: 30%;
+    }
+
+    .contact_value {
+        text-align: left;
+        width: 70%;
+    }
+
+    .contact_value>a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    #contact_regular {
+        position: absolute;
+        font-size: 2vw;
+        top: 32vw;
+        width: 40vw;
+        left: 10vw;
+        text-align: center;
+    }
 }

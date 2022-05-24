@@ -108,6 +108,8 @@
     }
 
     #courses {
+        position: relative;
+        height: 20vw;
         font-size: 5vw;
         margin-left: 6vw;
         margin-right: 6vw;
