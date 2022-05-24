@@ -4,6 +4,7 @@
         font-size: 9vw;
         position: relative;
         margin-top: 4vw;
+        margin-bottom: 4vw;
     }
 
     .training_location {
@@ -16,7 +17,7 @@
         font-size: 7vw;
         margin-left: 6vw;
         margin-right: 6vw;
-        margin-top: 6vw;
+        margin-top: 2vw;
         position: relative;
     }
 
@@ -31,11 +32,17 @@
     .map_holder {
         background: url('../../../images/map_thumb.png') center no-repeat;
         background-size: cover;
+        margin-bottom: 3vw;
     }
 
     .map {
         height: 100%;
         width: 100%;
+    }
+
+    .training_please_contact {
+        font-size: 4vw;
+        margin-top: 2vw;
     }
 
     .training_cost_header {

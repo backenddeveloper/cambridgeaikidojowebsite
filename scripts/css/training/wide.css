@@ -21,8 +21,16 @@
         margin-top: 1vw;
     }
 
+    #teenagers {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 1vw;
+    }
+
     #training_info {
-        font-size: 1.8vw;
+        font-size: 2.5vw;
         margin-left: 2vw;
         margin-right: 2vw;
     }
@@ -58,6 +66,11 @@
         width: 100%;
         max-width: 27vw;
         position: relative;
+    }
+
+    .training_please_contact {
+        font-size: 2.5vw;
+        margin-top: 2vw;
     }
 
     .training_cost_header, .training_parking_header, .training_clothing_header {

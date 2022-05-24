@@ -50,7 +50,7 @@
     }
 
     .text {
-        color: white;
+        color: #dedede;
     }
 
     #training_empty_cell {
@@ -72,7 +72,7 @@
     }
 
     .link > a {
-        color: #ffffff;
+        color: #dedede;
         border: 1px solid #5a5a5a;
     }
 
@@ -82,6 +82,6 @@
     }
 
     .contact_value>a {
-        color: white !important;
+        color: #dedede !important;
     }
 }
