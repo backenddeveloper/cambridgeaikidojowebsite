@@ -1,0 +1,87 @@
+@media (prefers-color-scheme: light) {
+
+    @media (max-aspect-ratio: 2/3) {
+
+        #main_nav {
+            background: white;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    @media (max-aspect-ratio: 2/3) {
+
+        #main_nav {
+            background: black;
+        }
+
+        #burger {
+            border: 1px solid #5a5a5a;
+            box-shadow: 1vw 1vw #5a5a5a;
+            background: #272727;
+        }
+
+        #burger_checkbox:checked ~ .link {
+            box-shadow: 1vw 1vw #272727;
+        }
+
+        #burger_checkbox:active ~ #burger {
+            background: #5a5a5a;
+            box-shadow: none;
+        }
+
+        .bun {
+            background: #9a9a9a;
+        }
+    }
+
+    @media (min-aspect-ratio: 2 / 3) {
+
+    }
+
+    #background {
+        background: black;
+        opacity: 1;
+    }
+
+    #background>img {
+        filter: invert(1) !important;
+    }
+
+    .text {
+        color: white;
+    }
+
+    #training_empty_cell {
+        border: none !important;
+    }
+
+    #top_nav>.link {
+        background: #272727;
+        box-shadow: 4px 5px #3e3e3e;
+    }
+
+    .link:hover {
+        background: #7c7c7c;
+    }
+
+    .link:active {
+        background: #404040 !important;
+        box-shadow: 2px 2px #3e3e3e !important;
+    }
+
+    .link > a {
+        color: #ffffff;
+        border: 1px solid #5a5a5a;
+    }
+
+    #home_name {
+        color: #f9f9f9;
+        text-shadow: 5px 5px 5px #3e3e3e;
+    }
+
+    .contact_value>a {
+        color: white !important;
+    }
+}

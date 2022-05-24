@@ -25,6 +25,7 @@
         flex: 1;
         margin-left: 1vw;
         margin-right: 1vw;
+        box-shadow: 4px 5px #ececec;
     }
     
     .link > a {
@@ -35,7 +36,6 @@
         flex-grow: 1;
         border: 1px solid #dedede;
         border-radius: 2px;
-        box-shadow: 4px 4px #ececec;
     }
     
     .link:hover {
@@ -53,6 +53,7 @@
         left: 0px;
         right: 0px;
         bottom: 0px;
+        height: fit-content;
     }
 
     #home_name {
@@ -69,12 +70,12 @@
     }
 
     #background {
-        position: absolute;
+        position: fixed;
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        height: 110vh;
+        height: 100%;
         width: 110vw;
         z-index: -1;
         background-color: white;
@@ -87,7 +88,7 @@
         left: 13vw;
         width: 70vw;
         top: 12vh;
-        height: 100%;
+        height: 1000%;
         max-height: 50vw;
     }
 
