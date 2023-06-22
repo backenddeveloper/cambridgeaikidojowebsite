@@ -66,4 +66,10 @@
         left: 10vw;
         text-align: center;
     }
+
+    #facebook {
+        max-height: 6vh;
+        left: 3vw;
+        position: relative;
+    }
 }
